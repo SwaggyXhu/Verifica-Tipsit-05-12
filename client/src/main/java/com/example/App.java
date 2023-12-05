@@ -23,7 +23,7 @@ public class App {
             Ascolto a = new Ascolto(inDalServer);
             a.start();
             do {
-                System.out.println("Inserisci una lettera che pensi sia nella parola ");
+                System.out.println("Connessione Effettuata inserisci Esci per uscirel \n Inserisci una lettera che pensi sia nella parola ");
                 scelta = leggiTastiera.readLine();
                 outVersoServer.writeBytes(scelta+"\n");
                 scelta = scelta.toUpperCase();
